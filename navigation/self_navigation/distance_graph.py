@@ -1,30 +1,9 @@
-"""
-JUET weighted navigation graph.
-
-Each vertex contains:
-    - connections:
-        Connected vertex -> edge distance in meters
-    - coordinates:
-        GPS coordinates of the vertex
-
-Important:
-    The distances in `connections` represent the mapped road/path
-    distances, not straight-line GPS distance.
-"""
-
-
 juet_weighted_graph = {
 
-    # Reference coordinate for JUET.
     "juet_coords": {
         "lats": 24.435455,
         "longs": 77.162249,
     },
-
-    # ------------------------------------------------------------------
-    # A SIDE
-    # ------------------------------------------------------------------
-
     "A": {
         "connections": {
             "A1": 160,
@@ -70,11 +49,6 @@ juet_weighted_graph = {
             "longs": 77.161737,
         },
     },
-
-    # ------------------------------------------------------------------
-    # CENTRAL / EAST SIDE
-    # ------------------------------------------------------------------
-
     "Z": {
         "connections": {
             "A6": 102,
@@ -96,7 +70,6 @@ juet_weighted_graph = {
             "longs": 77.162695,
         },
     },
-
     "X": {
         "connections": {
             "A6": 48.8,
@@ -108,7 +81,6 @@ juet_weighted_graph = {
             "longs": 77.162095,
         },
     },
-
     "W": {
         "connections": {
             "X": 50.39,
@@ -130,7 +102,6 @@ juet_weighted_graph = {
             "longs": 77.162937,
         },
     },
-
     "U": {
         "connections": {
             "J": 265,
@@ -141,11 +112,6 @@ juet_weighted_graph = {
             "longs": 77.163025,
         },
     },
-
-    # ------------------------------------------------------------------
-    # B -> J SIDE
-    # ------------------------------------------------------------------
-
     "B": {
         "connections": {
             "A": 69,
@@ -156,7 +122,6 @@ juet_weighted_graph = {
             "longs": 77.158963,
         },
     },
-
     "D": {
         "connections": {
             "B": 200,
@@ -167,7 +132,6 @@ juet_weighted_graph = {
             "longs": 77.158183,
         },
     },
-
     "F": {
         "connections": {
             "D": 206,
@@ -178,7 +142,6 @@ juet_weighted_graph = {
             "longs": 77.158405,
         },
     },
-
     "G": {
         "connections": {
             "F": 27,
@@ -189,7 +152,6 @@ juet_weighted_graph = {
             "longs": 77.159899,
         },
     },
-
     "H": {
         "connections": {
             "G": 26,
